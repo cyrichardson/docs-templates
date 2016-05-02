@@ -90,6 +90,8 @@ The following example updates two properties for the image: ``name`` and ``tags`
 
 .. code::
 
+(?cyr: Include actual HTTP request part of this operations?)
+
     [
         {"op": "replace", "path": "/name", "value": "Fedora 17"},
         {"op": "replace", "path": "/tags", "value": ["fedora", "beefy"]}
@@ -101,6 +103,8 @@ Response parameters
 The response conforms to the schema found in Get image schema.
 
 The following table shows the body parameters for the response.
+
+(?cyr: It looks like these are not all in alphabetical order. Should they be? Would probably be good to show an example with nested parameters, too?)
 
 .. list-table:: 
    :widths: 15 10 30
@@ -149,6 +153,8 @@ Response example
 The following example shows the JSON response for retrieving the backup for a project.
 
 .. code::
+
+(?cyr: Include HTTP output, which is usually the response code?)
 
     {
       "id":"e7db3b45-8db7-47ad-8109-3fb55c2c24fd",
